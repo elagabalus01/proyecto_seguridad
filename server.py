@@ -14,7 +14,7 @@ server = SimpleXMLRPCServer(('localhost', 9000))
 server.register_function(lanzar_comando, 'command')
 
 host=socket.gethostbyname(socket.gethostname())
-client = xmlrpc.client.ServerProxy('http://192.168.1.2:9000')
+client = xmlrpc.client.ServerProxy('http://192.168.1.1:9000')
 result=getattr(client, 'registrar')(str(host))
 
 try:
