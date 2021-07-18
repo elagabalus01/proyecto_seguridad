@@ -1,5 +1,5 @@
 import xmlrpc.client
-proxy = xmlrpc.client.ServerProxy('http://192.168.1.1:9000')
+proxy = xmlrpc.client.ServerProxy('http://192.168.1.2:9000')
 
 while True:
     try:
