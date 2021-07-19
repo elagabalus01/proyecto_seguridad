@@ -1,5 +1,5 @@
 from xmlrpc.server import SimpleXMLRPCServer
-from aux.get_host_ip import get_local_ip
+from utils.get_host_ip import get_local_ip
 
 def registrar(host):
     print(f"Nuevo host conectado {host}")
