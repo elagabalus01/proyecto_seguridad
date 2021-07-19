@@ -1,10 +1,13 @@
 from xmlrpc.server import SimpleXMLRPCServer
+from aux.get_host_ip import get_local_ip
 
 def registrar(host):
     print(f"Nuevo host conectado {host}")
     return True
 
-server = SimpleXMLRPCServer(('192.168.1.1', 9000))
+host=str(get_local_ip())
+port=9001
+server = SimpleXMLRPCServer((host, port))
 server.register_function(registrar, 'registrar')
 
 try:
