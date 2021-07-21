@@ -10,7 +10,7 @@ def lanzar_comando(comando):
     result = subprocess.run(comando,capture_output=True)
     return result.stdout
 
-host_registro='192.168.1.1'
+host_registro='192.168.1.2'
 port_registro=9001
 host=str(get_local_ip())
 port=9000

