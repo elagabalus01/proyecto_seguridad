@@ -1,3 +1,7 @@
 build
 files
 readme.txt
+utils
+client.py
+server.py
+ServidorRegistro.py
